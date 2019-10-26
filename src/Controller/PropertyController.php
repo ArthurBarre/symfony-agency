@@ -28,9 +28,22 @@ class PropertyController extends AbstractController {
 	 * @return Response
 	 */
 		public function index():Response{
-		return $this->render('property/index.html.twig',[
-			'current_menu' => 'properties'
-		]);
+			// $property = new Property();
+			// $property->setTitle("titre 2")
+			// ->setRooms('2')
+			// ->setBedrooms('4')
+			// ->setDescription('this is a new desc')
+			// ->setHeat(1)
+			// ->setSurface(45)
+			// ->setPrice(20)
+			// ->setCity('Paris')
+			// ->setPostalCode('75019');
+			// $em = $this->getDoctrine()->getManager();
+			// $em->persist($property);
+			// $em->flush();
+				return $this->render('property/index.html.twig',[
+					'current_menu' => 'properties'
+				]);
 	}
 	/**
 	 * @Route("/biens/{slug}-{id}",name="property.show",requirements={"slug":"[a-z0-9\-]*"})
